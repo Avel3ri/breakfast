@@ -4,7 +4,7 @@ import 'package:fitness/models/popular_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '/pages/popular.dart';
+import '/pages/moreinfo.dart';
 import '/widgets/appbar.dart';
 
 class HomePage extends StatefulWidget {
@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                             context,
                             MaterialPageRoute(
                               builder: (context) =>
-                                  PopularPage(diet: diets[index]),
+                                  MoreInfoPage(diet: diets[index]),
                             ),
                           );
                         },
@@ -346,7 +346,7 @@ class _HomePageState extends State<HomePage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) =>
-                                PopularPage(diet: popularDiets[index]),
+                                MoreInfoPage(diet: popularDiets[index]),
                           ),
                         );
                       },

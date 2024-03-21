@@ -1,16 +1,31 @@
-# fitness
+# Breakfast
 
-A new Flutter project.
+## Krótki opis
 
-## Getting Started
+Aplikacja "Breakfast" to projekt, który nauczył mnie podstaw Fluttera. Jest to prosta aplikacja mobilna, która pomaga użytkownikom eksplorować różnorodne śniadaniowe przepisy.
 
-This project is a starting point for a Flutter application.
+## Zrzuty ekranu
 
-A few resources to get you started if this is your first Flutter project:
+Poniżej znajdują się zrzuty ekranu przedstawiające główne funkcjonalności aplikacji:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Ekran główny](/images/home-page.webp)
+_Ekran główny aplikacji, prezentujący przegląd przepisów._
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Ekran przepisu](/images/moreinfo-age.webp)
+_Szczegółowe informacje o posiłku._
+
+## Demonstracja działania
+
+Poniższy webp pokazuje, jak użytkownik może przeglądać przepisy i zapoznawać się ze szczegółami:
+
+![Demonstracja aplikacji](/images/app-walkthrough.webp)
+_Przejście przez główne funkcje aplikacji "Breakfast"._
+
+## Jak zacząć
+
+Aby uruchomić projekt na swoim urządzeniu, upewnij się, że masz zainstalowane Flutter SDK oraz odpowiednie środowisko deweloperskie. Sklonuj repozytorium, a następnie wykonaj poniższe kroki w terminalu:
+
+```bash
+flutter pub get
+flutter run
+```

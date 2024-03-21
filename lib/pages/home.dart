@@ -185,7 +185,6 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 15),
         SizedBox(
-          // color: Colors.blue,
           height: 240,
           child: ListView.separated(
             itemBuilder: (context, index) {
@@ -223,30 +222,31 @@ class _HomePageState extends State<HomePage> {
                       height: 45,
                       width: 130,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            diets[index].viewIsSelected
-                                ? const Color(0xff9DCEFF)
-                                : Colors.transparent,
-                            diets[index].viewIsSelected
-                                ? const Color(0xFF92A3FD)
-                                : Colors.transparent,
-                          ],
+                        gradient: const LinearGradient(
+                          colors: [Color(0xff9DCEFF), Color(0xFF92A3FD)],
                         ),
                         borderRadius: BorderRadius.circular(50),
                       ),
                       child: Center(
-                        child: Text(
+                          child: GestureDetector(
+                        child: const Text(
                           'View',
                           style: TextStyle(
-                            color: diets[index].viewIsSelected
-                                ? Colors.white
-                                : const Color(0xffc58bf2),
+                            color: Colors.white,
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
                           ),
                         ),
-                      ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  PopularPage(diet: diets[index]),
+                            ),
+                          );
+                        },
+                      )),
                     )
                   ],
                 ),

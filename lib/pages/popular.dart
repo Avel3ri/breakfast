@@ -2,12 +2,13 @@ import 'package:fitness/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '/models/popular_model.dart';
+// import '/models/popular_model.dart';
 
 class PopularPage extends StatelessWidget {
   const PopularPage({super.key, required this.diet});
 
-  final PopularDietsModel diet;
+  // ignore: prefer_typing_uninitialized_variables
+  final diet;
 
   @override
   Widget build(BuildContext context) {
